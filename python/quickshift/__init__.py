@@ -1,0 +1,1 @@
+from .quickshift import Quickshift
