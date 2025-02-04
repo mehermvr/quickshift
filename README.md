@@ -6,10 +6,22 @@ Additionally, the C++ core library code has been modified (i.e., I tried to clea
 Installation should be a simple
 
 ```bash
+pip install git+https://github.com/mehermvr/quickshift.git
 pip install -e ".[test]"
 ```
 
+In case the above doesn't work, check if you might need `--no-build-isolation` in case of conflicts with your cmake install
+
+```bash
+pip install --no-build-isolation -v .
+pip install --no-build-isolation -v git+https://github.com/mehermvr/quickshift.git
+```
+
 There are some unit tests to ensure parity with the original implementation.
+
+```bash
+pytest tests
+```
 
 # Original README below
 
